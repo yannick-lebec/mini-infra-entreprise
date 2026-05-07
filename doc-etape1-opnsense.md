@@ -186,7 +186,17 @@ ping 192.168.1.1
 
 ## 10. Captures d'écran
 
-> 📸 À ajouter : dashboard OPNsense, résultat du ping, configuration réseau VirtualBox
+| Capture | Description |
+|---|---|
+| `captures/dashboard-opnsense.png` | Dashboard OPNsense — interfaces LAN/WAN actives, services en ligne |
+| `captures/ping-kali-opnsense.png` | Ping 192.168.1.1 depuis Kali — 6 paquets, 0% perte |
+| `captures/vbox-adapter1-lan.png` | VirtualBox — Adaptateur 1 : Réseau interne LAN |
+| `captures/vbox-adapter2-nat.png` | VirtualBox — Adaptateur 2 : NAT (WAN) |
+| `captures/vbox-adapter3-dmz.png` | VirtualBox — Adaptateur 3 : Réseau interne DMZ |
+
+> ⚠️ **Point d'attention relevé sur le dashboard :** OPNsense affiche le bandeau *"You are currently running in live media mode. A reboot will reset the configuration."*  
+> Cela indique que la VM tourne depuis l'ISO sans que la configuration soit persistée sur le disque. **Si la VM redémarre, toute la configuration est perdue.**  
+> **Action requise :** Vérifier que l'installation sur le disque `ada0` a bien été effectuée et que la VM démarre sur le disque, pas sur l'ISO. Retirer l'ISO du lecteur optique dans les paramètres VirtualBox.
 
 ---
 
