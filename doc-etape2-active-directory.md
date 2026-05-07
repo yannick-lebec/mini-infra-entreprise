@@ -236,12 +236,10 @@ lab.local (Domaine)
 
 | Capture | Description |
 |---|---|
-| `captures/ad-get-aduser.png` | `Get-ADUser -Filter *` — utilisateurs jdupont et mmartin créés |
+| `captures/ad-get-aduser.png` | `Get-ADUser -Filter *` — utilisateurs jdupont et mmartin actifs (`Enabled: True`) |
 | `captures/ad-groupe-employes.png` | `Get-ADGroupMember "Employes"` — 2 membres confirmés |
 | `captures/sconfig-domaine-lab.png` | SConfig — Domaine : lab.local actif |
 | `captures/ping-winserver-opnsense.png` | Ping 192.168.1.1 — 4 paquets, 0% perte |
-
-> ⚠️ **Attention — mot de passe visible dans la capture `ad-get-aduser.png` :** La commande `New-ADUser` apparaît dans l'historique du terminal avec le mot de passe en clair. Ne pas publier cette capture telle quelle sur un dépôt public. Flouter ou rogner la ligne de commande avant de l'intégrer au portfolio.
 
 ---
 
